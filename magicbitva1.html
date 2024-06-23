@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magic Battle Season 1</title>
+    <link rel="stylesheet" href="magicbitva1.css">
+    <script src="magicbitva.js" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1 class="logo"><a href="user_home.html">Anime Home</a></h1>
+            <nav class="nav">
+                <a href="login.html">Logout</a>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <section class="anime-details">
+            <div class="anime-photo">
+                <img src="image/магічна битва1.jpg" alt="Anime 2">
+            </div>
+
+            <div class="anime-description">
+                <h2>Magic Battle Season 1</h2>
+                <p> Year: 2020 </p>
+                <p> Genre: Anime • Action • Adventure • Thriller • Fantasy </p>
+                <p> Country: Japan </p>
+                <p> Director: Yui Umemoto, Sunghoo Park </p>
+                <p> Starring: Junya Enoki, Yuma Uchida, Asami Seto,</p>
+                <p>Yuichi Nakamura, Mitsuo Iwata, Nobunaga Shimazaki, Tomokazu Seki, Mikako Komatsu </p>
+                <p> Duration: 00:24:00 </p>
+                <p> Episodes: 1 season 24 episodes </p>
+                <p> Status: 2 out of 24 episodes</p>
+            </div>
+            <div class="anime-story">
+                <h3>Description:</h3>
+                <p>An excellent adventure fantasy with elements of mystical action about the coexistence of humans and supernatural beings, as well as a magical order that opposes curses.</p>
+                <p>According to the plot, high school student Yuji Itadori has been distinguished by his shyness and athleticism since childhood. His best friend, his grandfather, fell seriously ill, so Yuji always tries to be closer to the old man. The grandfather shares various legends with his grandson, prompting Yuji to join a mysterious occult club. Unexpectedly, the boy finds himself at the center of a magical confrontation that unfolds around collecting pieces of a powerful demon that can grant their owner unlimited power...</p>
+            </div>
+
+            <!-- Characters -->
+            <div class="anime-characters">
+                <h3>Characters:</h3>
+                <div class="character">
+                    <img src="actor/Годжо Сатору.jpg" alt="Character 1">
+                    <p>Satoru Gojo</p>
+                </div>
+                <div class="character">
+                    <img src="actor/Ітадорі Юдзі.jpg" alt="Character 2">
+                    <p>Yuji Itadori</p>
+                </div>
+                <div class="character">
+                    <img src="actor/Кугісакі Нобора.jpg" alt="Character 3">
+                    <p>Nobara Kugisaki</p>
+                </div>
+                <div class="character">
+                    <img src="actor/Сукуна.jpg" alt="Character 4">
+                    <p>Ryomen Sukuna</p>
+                </div>
+                <div class="character">
+                    <img src="actor/Фушігуро Мегумі.jpg" alt="Character 5">
+                    <p>Megumi Fushiguro</p>
+                </div>
+            </div>
+
+            <!-- Anime Video -->
+            <div class="anime-video">
+                <div class="video-tabs">
+                    <button class="tab-link active" onclick="openTab('online')">Online</button>
+                    <button class="tab-link" onclick="openTab('trailer')">Trailer</button>
+                </div>
+
+                <div id="online" class="video-tab active">
+                    <div id="series1" class="series-video active">
+                        <video width="560" height="315" controls>
+                            <source src="serios/магічна битва 1 сезон 1 серія.mp4" type="video/mp4">
+                        </video>
+                    </div>
+
+                    <div id="series2" class="series-video">
+                        <video width="560" height="315" controls>
+                            <source src="serios/магічна битва 1 сезон 2 серія.mp4" type="video/mp4">
+                        </video>
+                    </div>
+
+                    <div class="series-dropdown">
+                        <select id="seriesSelect" onchange="openSeries(this.value)">
+                            <option value="series1" selected>Episode 1</option>
+                            <option value="series2">Episode 2</option>
+                            <!-- Add options for other episodes as needed -->
+                        </select>
+                    </div>
+                </div>
+
+                <div id="trailer" class="video-tab">
+                    <div class="trailer-video">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/pkKu9hLT-t8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
+
+

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1 class="logo"><a href="user_home.html">Anime Home</a></h1>
+            <nav class="nav">
+                <a href="login.html">Logout</a>
+            </nav>
+        </div>
+    </header>
+    <div class="profile-container">
+        <h2>Welcome, <span id="usernameDisplay"></span></h2>
+        <div class="profile-picture">
+            <img id="profileImage" src="default-avatar.png" alt="Profile Picture">
+            <form id="uploadForm">
+                <label class="file-upload">
+                    <input type="file" id="uploadInput" name="profilePicture" accept="image/*">
+                    Choose File
+                </label>
+                <button type="submit">Upload</button>
+                <button type="button" id="removePhotoBtn">Remove Photo</button>
+            </form>
+            <div id="presetImagesContainer" class="preset-images-container"></div>
+        </div>
+        <div class="user-info">
+            <p><strong>Full Name:</strong> <span id="fullnameDisplay"></span></p>
+            <p><strong>Email:</strong> <span id="emailDisplay"></span></p>
+            <p><strong>Gender:</strong> <span id="genderDisplay"></span></p>
+            <p><strong>Age:</strong> <span id="ageDisplay"></span></p>
+            <p><strong>Phone:</strong> <span id="phoneDisplay"></span></p>
+            <p><strong>Country:</strong> <span id="countryDisplay"></span></p>
+            <button id="editProfileBtn">Edit Profile</button>
+        </div>
+        <div class="edit-profile hidden">
+            <form id="editProfileForm">
+                <label for="edit-username">Username:</label>
+                <input type="text" id="edit-username" name="username" required>
+
+                <label for="edit-fullname">Full Name:</label>
+                <input type="text" id="edit-fullname" name="fullname" required>
+
+                <label for="edit-email">Email:</label>
+                <input type="email" id="edit-email" name="email" required>
+
+                <label for="edit-gender">Gender:</label>
+                <select id="edit-gender" name="gender" required>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <label for="edit-age">Age:</label>
+                <input type="number" id="edit-age" name="age" required>
+
+                <label for="edit-phone">Phone Number:</label>
+                <input type="tel" id="edit-phone" name="phone" required>
+
+                <label for="edit-country">Country:</label>
+                <select id="edit-country" name="country" required>
+                    <option value="ukraine">Ukraine</option>
+                    <option value="usa">USA</option>
+                    <option value="canada">Canada</option>
+                    <!-- Add more options as needed -->
+                </select>
+
+                <button type="submit">Save Changes</button>
+                <button type="button" id="cancelEditBtn">Cancel</button>
+            </form>
+            <div class="change-password">
+                <h3>Change Password</h3>
+                <form id="changePasswordForm">
+                    <label for="current-password">Current Password:</label>
+                    <input type="password" id="current-password" name="currentPassword" required>
+
+                    <label for="new-password">New Password:</label>
+                    <input type="password" id="new-password" name="newPassword" required>
+                    <input type="checkbox" id="show-new-password"> Show Password
+
+                    <button type="submit">Change Password</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="profile.js"></script>
+</body>
+</html>
+

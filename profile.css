@@ -1,0 +1,190 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f3f3f3;
+    height: 100%;
+}
+
+header {
+    background-color: #f8bbd0; /* Ніжний рожевий колір */
+    color: white;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 20px;
+}
+
+.logo {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-size: 24px;
+    margin: 0;
+    color: #000; /* Чорний колір для логотипу */
+}
+
+.nav a {
+    color: #000; /* Чорний колір для навігації */
+    text-decoration: none;
+    font-size: 18px;
+}
+
+    .nav a:hover {
+        text-decoration: underline;
+    }
+
+.profile-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.profile-picture img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.file-upload {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #f48fb1; /* Темніший рожевий */
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+    .file-upload input[type="file"] {
+        display: none;
+    }
+
+    .file-upload:hover {
+        background-color: #f06292; /* Трохи темніший рожевий при наведенні */
+    }
+
+button {
+    background-color: #f48fb1; /* Темніший рожевий */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+    button:hover {
+        background-color: #f06292; /* Трохи темніший рожевий при наведенні */
+    }
+
+    button#cancelEditBtn {
+        background-color: #ccc;
+        color: #000;
+    }
+
+        button#cancelEditBtn:hover {
+            background-color: #999;
+        }
+
+.preset-images-container {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+    .preset-images-container img {
+        width: 100px;
+        height: 100px;
+        cursor: pointer;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+.user-info {
+    margin-top: 20px;
+}
+
+    .user-info p {
+        margin: 5px 0;
+    }
+
+.edit-profile {
+    margin-top: 20px;
+}
+
+    .edit-profile.hidden {
+        display: none;
+    }
+
+    .edit-profile form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 20px;
+    }
+
+    .edit-profile label {
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+
+    .edit-profile input,
+    .edit-profile select {
+        padding: 8px;
+        font-size: 14px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+.change-password {
+    margin-top: 30px;
+}
+
+    .change-password h3 {
+        margin-bottom: 10px;
+    }
+
+    .change-password label {
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+
+    .change-password input {
+        padding: 8px;
+        font-size: 14px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+
+    .change-password button {
+        background-color: #f48fb1; /* Темніший рожевий */
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+
+        .change-password button:hover {
+            background-color: #f06292; /* Трохи темніший рожевий при наведенні */
+        }
+
+    .change-password #show-new-password {
+        margin-left: 10px;
+    }

@@ -1,0 +1,190 @@
+/* Загальні стилі для всіх елементів */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f3f3f3;
+}
+
+header {
+    background-color: #f8bbd0; /* Ніжний рожевий колір */
+    color: white;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 20px;
+}
+
+.logo {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-size: 24px;
+    margin: 0;
+    color: #000; /* Чорний колір для логотипу */
+}
+
+.nav {
+    display: flex;
+    gap: 20px;
+}
+
+    .nav a {
+        color: #000; /* Чорний колір для навігації */
+        text-decoration: none;
+        font-size: 18px;
+    }
+
+        .nav a:hover {
+            text-decoration: underline;
+        }
+
+.home-link {
+    color: #000; /* Чорний колір для навігації */
+    text-decoration: none;
+}
+
+/* Стилі для інформації про аніме */
+.anime-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+/* Стилі для фото аніме */
+.anime-photo {
+    flex: 0 1 280px;
+    margin-right: 20px;
+}
+
+    .anime-photo img {
+        width: 100%;
+        height: auto;
+        display: block;
+        margin-bottom: 50px;
+    }
+
+/* Стилі для опису аніме */
+.anime-description {
+    flex: 1 1 calc(40% - 20px);
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+/* Стилі для розповіді про аніме */
+.anime-story {
+    margin-top: -15px;
+}
+
+/* Стилі для персонажів */
+.anime-characters {
+    flex: 1 1 100%;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.character {
+    flex: 0 1 calc(10% - 20px);
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+    .character img {
+        width: 250px;
+        height: 150px;
+        display: block;
+        margin: 0 auto;
+    }
+
+/* Стилі для відеофрейму та вкладок */
+.anime-video {
+    margin-top: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 30%;
+}
+
+.video-tabs {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.tab-link {
+    font-size: 18px;
+    background-color: #f8bbd0; /* Ніжний рожевий */
+    color: #000; /* Чорний колір тексту */
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px 5px 0 0;
+    margin: 0 5px;
+}
+
+    .tab-link:hover {
+        background-color: #f06292; /* Трохи темніший рожевий при наведенні */
+    }
+
+.video-tab {
+    display: none;
+}
+
+    .video-tab.active {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+.iframe {
+    width: 900px;
+    height: 450px;
+}
+
+.series-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.series-link {
+    background-color: #f8bbd0; /* Ніжний рожевий */
+    color: #000; /* Чорний колір тексту */
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 0 5px;
+}
+
+    .series-link.active {
+        background-color: #f06292; /* Трохи темніший рожевий при наведенні */
+    }
+
+.series-dropdown {
+    margin-top: 20px;
+}
+
+    .series-dropdown select {
+        padding: 10px;
+        background-color: #f8bbd0; /* Ніжний рожевий */
+        color: #000; /* Чорний колір тексту */
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+    }
+
+        .series-dropdown select:hover {
+            background-color: #f06292; /* Трохи темніший рожевий при наведенні */
+        }

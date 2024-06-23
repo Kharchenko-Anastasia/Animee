@@ -1,0 +1,380 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f3f3f3;
+    height: 100%;
+}
+
+header {
+    background-color: #f8bbd0; /* Ніжний рожевий колір */
+    color: white;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 20px;
+}
+
+.logo {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-size: 24px;
+    margin: 0;
+    color: #000; /* Чорний колір для логотипу */
+}
+
+.nav {
+    display: flex;
+    gap: 20px;
+}
+
+    .nav a {
+        color: #000; /* Чорний колір для навігації */
+        text-decoration: none;
+        font-size: 18px;
+    }
+
+        .nav a:hover {
+            text-decoration: underline;
+        }
+
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+#search-input {
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 3px 0 0 3px;
+    outline: none;
+}
+
+#search-button {
+    padding: 5px 10px;
+    font-size: 16px;
+    border: none;
+    background-color: #f48fb1; /* Темніший рожевий */
+    color: white;
+    cursor: pointer;
+    border-radius: 0 3px 3px 0;
+}
+
+    #search-button:hover {
+        background-color: #f06292; /* Трохи темніший рожевий при наведенні */
+    }
+
+.login-button {
+    padding: 5px 10px;
+    background-color: #f48fb1; /* Темніший рожевий */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+    .login-button:hover {
+        background-color: #f06292; /* Трохи темніший рожевий при наведенні */
+    }
+
+.content {
+    display: flex;
+}
+
+.main-content {
+    flex-grow: 1;
+    padding-right: 20px;
+}
+
+.hero {
+    background-color: #fff;
+    padding: 30px;
+    text-align: center;
+}
+
+    .hero h2 {
+        font-size: 36px;
+        margin-bottom: 20px;
+    }
+
+    .hero p {
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+
+.anime-summer-vibe {
+    padding: 30px;
+    background-color: #fff;
+    margin-top: 20px;
+}
+
+    .anime-summer-vibe h3 {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+
+.anime-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px 0;
+}
+
+.anime-item {
+    margin-top: 15px;
+    width: 200px;
+    text-align: center;
+}
+
+    .anime-item img {
+        width: 100%;
+        height: auto;
+        border-radius: 5px; /* Додаємо заокруглені краї */
+    }
+
+    .anime-item h2 {
+        margin-top: 10px;
+        font-size: 18px;
+        color: black; /* Чорний текст */
+        text-decoration: none; /* Без підкреслення */
+    }
+
+    .anime-item a {
+        text-decoration: none; /* Без підкреслення */
+        color: black; /* Чорний текст */
+    }
+
+        .anime-item a:hover h2 {
+            color: #6a1b9a; /* Фіолетовий текст при наведенні */
+        }
+
+.anime-list-section {
+    padding: 30px;
+    background-color: #fff;
+    margin-top: 20px;
+    flex-grow: 1;
+}
+
+.anime-list-new {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.anime-item-new {
+    display: flex;
+    gap: 20px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+    .anime-item-new img {
+        width: 150px;
+        height: auto;
+        border-radius: 5px;
+    }
+
+.anime-info {
+    flex-grow: 1;
+}
+
+    .anime-info h2 {
+        margin: 0;
+        font-size: 20px;
+        color: #333;
+    }
+
+    .anime-info p {
+        margin: 10px 0;
+        font-size: 14px;
+        color: #666;
+    }
+
+.filter {
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #f8bbd0; /* Ніжний рожевий колір */
+    width: 250px;
+    box-shadow: none; /* Прибираємо тінь */
+    height: auto;
+    margin-top: 0; /* Відсутність відступу зверху */
+}
+
+    .filter h3 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+#year-range {
+    margin-bottom: 20px;
+}
+
+#year-values {
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.filter label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.filter select {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.filter select, .filter input {
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+    .filter select:focus, .filter input:focus {
+        outline: none;
+        border-color: #6a1b9a;
+    }
+
+#apply-filter, #reset-filter {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4a148c;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 10px; /* Додаємо відступ між кнопками */
+}
+
+#reset-filter {
+    background-color: transparent; /* Прозорий фон */
+    color: black; /* Чорний текст */
+    padding: 5px 10px; /* Менший розмір */
+    margin-bottom: 0; /* Вирівнюємо з кнопкою "Застосувати" */
+    margin-right: 10px; /* Відступ від кнопки "Застосувати" */
+    box-shadow: none; /* Прибираємо тінь */
+}
+
+    #apply-filter:hover, #reset-filter:hover {
+        background-color: #38006b;
+        color: white;
+    }
+
+    #reset-filter:hover {
+        background-color: transparent;
+        color: black;
+    }
+
+/* Стилі для Google мапи */
+#map-container {
+    height: 300px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+gmp-map {
+    height: 100%;
+}
+
+/* Додані стилі для календаря */
+#calendar-section {
+    margin-top: 20px;
+    text-align: left;
+    padding-left: 8px; /* Переміщення іконки лівіше */
+}
+
+#calendar-icon {
+    font-size: 24px;
+    cursor: pointer;
+    color: #4a148c;
+}
+
+#calendar-container {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 280px;
+    margin: 0 auto;
+}
+
+#calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#calendar-year {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#calendar-month {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#calendar-mini {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+    #calendar-mini table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    #calendar-mini th, #calendar-mini td {
+        border: 1px solid #ddd;
+        padding: 5px; /* Зменшимо відступи */
+        text-align: center;
+        width: 14.28%; /* Ширина стовпців рівномірно розподіляється */
+        font-size: 12px; /* Зменшимо розмір шрифта */
+    }
+
+    #calendar-mini th {
+        background-color: #f2f2f2;
+        font-size: 14px; /* Зменшимо розмір шрифта для заголовків */
+    }
+
+.has-anime-release {
+    background-color: #d1c4e9; /* Колір для дат з виходом серій аніме */
+    cursor: pointer;
+}
+
+.new-anime-release {
+    background-color: #f44336; /* Червоний колір для нових аніме */
+    color: #fff; /* Білий текст для кращої читабельності */
+}
+/* Стилі для Google мапи */
+#map-container {
+    position: absolute;
+    bottom: -2300px;
+    right: 20px;
+    height: 150px; /* Розмір карти */
+    width: 200px; /* Розмір карти */
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    z-index: 1000; /* Зробимо карту поверх іншого контенту */
+    background-color: white; /* Додамо білий фон, щоб карта краще виглядала */
+}

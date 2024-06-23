@@ -1,0 +1,98 @@
+[
+  {
+    "username": "kn22-a.kharchenko11",
+    "password": "AA2005Aa"
+  },
+  {
+    "fullname": "Anastasi Ketty",
+    "gender": "female",
+    "age": "22",
+    "phone": "+380996140745",
+    "email": "nastyakharchenko6@gmail.com",
+    "country": "ukraine",
+    "username": "aaaaa",
+    "password": "ce9b9829690fbcdd77a1ea356357e644d202d273fbcb70b58954b694cd79a031"
+  },
+  {
+    "fullname": "Доб",
+    "gender": "female",
+    "age": "19",
+    "phone": "+380996140745",
+    "email": "nastyakharchenko6@gmail.com",
+    "country": "ukraine",
+    "username": "ffff",
+    "password": "354d3d804dc7b228397142d4a739c019716d197612b1a5ab468a1a6a64c27ae2"
+  },
+  {
+    "fullname": "Anastasi Ketty",
+    "gender": "male",
+    "age": "23",
+    "phone": "+380996140745",
+    "email": "kn22-a.kharchenko@nubip.edu.ua",
+    "country": "ukraine",
+    "username": "ggggg",
+    "password": "b0cff251ba1955ace3cbde7a4fcf0c849d0cd530a07fec8afcbcfacf9e048e69"
+  },
+  {
+    "fullname": "Доб",
+    "gender": "female",
+    "age": "34",
+    "phone": "+380996140745",
+    "email": "nastyakharchenko6@gmail.com",
+    "country": "ukraine",
+    "username": "hhhhhhh",
+    "password": "f5f70b3c60d51bc7107b47e3029c3830176546fa01114f5ad4e0c026cf5c9f65"
+  },
+  {
+    "fullname": "ffff",
+    "gender": "other",
+    "age": "44",
+    "phone": "+380996140745",
+    "email": "kn22-a.kharchenko@nubip.edu.ua",
+    "country": "ukraine",
+    "username": "kn22-a.k",
+    "password": "1e24a1241ea370becac83bc26cc501250ee49c6e981c227c834f36eec5897d0b"
+  },
+  {
+    "username": "ketty",
+    "password": "b601ea952774702a3d743892568e78fd64af0865ca5c7ff14eaa654063f9cae1",
+    "dob": "2024-06-05 14:48:46"
+  },
+  {
+    "fullname": "Anastasi Ketty",
+    "gender": "female",
+    "age": "18",
+    "phone": "+380996140745",
+    "email": "kn22-a.kharchenko@nubip.edu.ua",
+    "country": "ukraine",
+    "username": "kettyк",
+    "password": "b601ea952774702a3d743892568e78fd64af0865ca5c7ff14eaa654063f9cae1"
+  },
+  {
+    "username": "anastasi_krapka",
+    "password": "354d3d804dc7b228397142d4a739c019716d197612b1a5ab468a1a6a64c27ae2",
+    "profileImage": "preset-images/image1.jpg"
+  },
+  {
+    "fullname": "Anastasi Ketty",
+    "gender": "female",
+    "age": "19",
+    "phone": "+380996140745",
+    "email": "kn22-a.kharchenko@nubip.edu.ua",
+    "country": "ukraine",
+    "username": "anastasi_krapka",
+    "password": "354d3d804dc7b228397142d4a739c019716d197612b1a5ab468a1a6a64c27ae2",
+    "profileImage": "/uploads/profilePicture-1718048806999.jpg"
+  },
+  {
+    "fullname": "Anastasi Ketty",
+    "gender": "female",
+    "age": "19",
+    "phone": "+380996140745",
+    "email": "nastyakharchenko6@gmail.com",
+    "country": "ukraine",
+    "username": "anastasi_krapkaууу",
+    "password": "354d3d804dc7b228397142d4a739c019716d197612b1a5ab468a1a6a64c27ae2",
+    "profileImage": "/uploads/profilePicture-1718052764882.jpg"
+  }
+]

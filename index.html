@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Added CDN for Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Added Google Maps API script -->
+    <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBsKOGNtuJsSdiZkfIkaWkyU3CVR3P2iCo&callback=console.debug&libraries=maps,marker&v=beta"></script>
+    <!-- Added script for jQuery UI -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1 class="logo">Anime Home</h1>
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="Search by anime title">
+                <button id="search-button"><i class="bi bi-search"></i></button>
+            </div>
+            <a href="login.html">Login</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2>Anime Home</h2>
+            <p>Anime Home is your best resource for watching anime online. We created this site to make watching your favorite anime convenient and enjoyable. Here you will find a large selection of anime of various genres and release years, as well as easy-to-use filters to find the titles you need.</p>
+            <p>Our site is constantly updated, so you will always find the latest and most popular anime. Join our community and enjoy watching your favorite anime with us!</p>
+        </section>
+
+        <section class="anime-summer-vibe">
+            <h3>Summer Vibe</h3>
+            <p>Our anime recommendations that are associated with summer. These anime will help you feel the summer mood and enjoy the warmth.</p>
+            <div class="anime-list">
+                <div class="anime-item" year-filter="2019" genre-filter="slice_of_life comedy" type-filter="series">
+                    <img src="image/Невірний шлях.jpg" alt="Summer Anime 1">
+                    <h2>False Path</h2>
+                </div>
+                <div class="anime-item" year-filter="2020" genre-filter="romance drama" type-filter="series">
+                    <img src="image/Собачі дня.jpg" alt="Summer Anime 2">
+                    <h2>Dog Days</h2>
+                </div>
+                <div class="anime-item" year-filter="2021" genre-filter="adventure fantasy" type-filter="series">
+                    <img src="image/І те, та інше.jpg" alt="Summer Anime 3">
+                    <h2>This and That</h2>
+                </div>
+                <div class="anime-item" year-filter="2022" genre-filter="sports comedy" type-filter="series">
+                    <img src="image/Літня буря.jpg" alt="Summer Anime 4">
+                    <h2>Summer Storm</h2>
+                </div>
+            </div>
+        </section>
+
+        <div class="content">
+            <section class="anime-list-section">
+                <h3>New Anime on the Site</h3>
+                <div class="anime-list-new">
+                    <div class="anime-item-new" year-filter="2019" genre-filter="history fantasy action" type-filter="series">
+                        <img src="image/клинок1.jpg" alt="Anime 1">
+                        <div class="anime-info">
+                            <h2>Demon Slayer Season 1</h2>
+                            <p><strong>Series</strong> / <strong>2019</strong> / <strong>History, Fantasy, Action</strong></p>
+                            <p>Anime description...</p>
+                        </div>
+                    </div>
+                    <a href="magicbitva1.html" class="anime-item-link">
+                        <div class="anime-item-new" year-filter="2020" genre-filter="demons fantasy action" type-filter="series">
+                            <img src="image/магічна битва1.jpg" alt="Anime 2">
+                            <div class="anime-info">
+                                <h2>Magic Battle Season 1</h2>
+                                <p><strong>Series</strong> / <strong>2020</strong> / <strong>Demons, Fantasy, Action</strong></p>
+                                <p>Anime description...</p>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="anime-item-new" year-filter="2022" genre-filter="cyberpunk sci-fi" type-filter="series">
+                        <img src="image/Кіберпанк.jpg" alt="Anime 3">
+                        <div class="anime-info">
+                            <h2>Cyberpunk</h2>
+                            <p><strong>Series</strong> / <strong>2022</strong> / <strong>Cyberpunk, Sci-fi</strong></p>
+                            <p>Anime description...</p>
+                        </div>
+                    </div>
+                    <div class="anime-item-new" year-filter="2023" genre-filter="comedy romance" type-filter="series">
+                        <img src="image/Закохати Ямаду до 99 рівня.jpg" alt="Anime 4">
+                        <div class="anime-info">
+                            <h2>Fall in Love with Yamada Level 999</h2>
+                            <p><strong>Series</strong> / <strong>2023</strong> / <strong>Comedy, Romance</strong></p>
+                            <p>Anime description...</p>
+                        </div>
+                    </div>
+                    <div class="anime-item-new" year-filter="2020" genre-filter="comedy romance" type-filter="series">
+                        <img src="image/Дівчина на прокат1.jpg" alt="Anime 5">
+                        <div class="anime-info">
+                            <h2>Rent-A-Girlfriend Season 1</h2>
+                            <p><strong>Series</strong> / <strong>2020</strong> / <strong>Comedy, Romance</strong></p>
+                            <p>Anime description...</p>
+                        </div>
+                    </div>
+                    <div class="anime-item-new" year-filter="2023" genre-filter="romance fantasy" type-filter="series">
+                        <img src="image/зіркові діти.jpg" alt="Anime 6">
+                        <div class="anime-info">
+                            <h2>Stellar Children</h2>
+                            <p><strong>Series</strong> / <strong>2023</strong> / <strong>Romance, Fantasy</strong></p>
+                            <p>Anime description...</p>
+                        </div>
+                    </div>
+                    <div class="anime-item-new" year-filter="2021" genre-filter="demons action" type-filter="movie">
+                        <img src="image/магічна битва0.jpg" alt="Anime 7">
+                        <div class="anime-info">
+                            <h2>Magic Battle 0</h2>
+                            <p><strong>Movie</strong> / <strong>2021</strong> / <strong>Demons, Action</strong></p>
+                            <p>Anime description...</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <aside class="filter">
+                <h3>Filter</h3>
+                <label for="year-range">Year:</label>
+                <div id="year-range"></div>
+                <p id="year-values"></p>
+
+                <label for="genre-filter">Genre:</label>
+                <select id="genre-filter">
+                    <option value="all">All</option>
+                    <option value="fantasy">Fantasy</option>
+                    <option value="demons">Demons</option>
+                    <option value="comedy">Comedy</option>
+                    <option value="cyberpunk">Cyberpunk</option>
+                    <option value="romance">Romance</option>
+                    <option value="action">Action</option>
+                    <option value="sci-fi">Sci-fi</option>
+                    <option value="history">History</option>
+                </select>
+
+                <label for="type-filter">Type:</label>
+                <select id="type-filter">
+                    <option value="all">All</option>
+                    <option value="series">Series</option>
+                    <option value="movie">Movie</option>
+                </select>
+
+                <button id="apply-filter">Apply</button>
+                <button id="reset-filter">Reset</button>
+            </aside>
+        </div>
+
+        <!-- Container for Google Map -->
+        <section id="map-container" style="height: 300px; width: 100%;">
+            <gmp-map center="35.6766242980957,139.65000915527344" zoom="14" map-id="DEMO_MAP_ID">
+                <gmp-advanced-marker position="35.6766242980957,139.65000915527344" title="My location"></gmp-advanced-marker>
+            </gmp-map>
+        </section>
+    </main>
+    <script src="script.js"></script>
+
+</body>
+</html>
+
